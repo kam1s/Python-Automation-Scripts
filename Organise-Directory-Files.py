@@ -23,7 +23,7 @@ try:
             os.remove(filename)
 
         # Check if files are videos and you can add more extentions
-        if filename.lower().endswith((".webm", ".mp4")):
+        if filename.lower().endswith((".mpeg", ".mp4", ".wav", ".avi")):
             # If video folder doesnt exist then create
             if not os.path.exists("video"):
                 os.makedirs("video")
@@ -56,7 +56,7 @@ try:
             os.remove(filename)
 
         # Check if files are documents
-        if filename.lower().endswith((".txt", ".pdf", ".docx" , "doc")):
+        if filename.lower().endswith((".txt", ".pdf", ".docx" , "doc", "xls", "xlsx")):
             # If documents folder doesnt exist then create
             if not os.path.exists("documents"):
                 os.makedirs("documents")
